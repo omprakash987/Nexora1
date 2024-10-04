@@ -25,8 +25,12 @@ export default function ContactForm() {
       } else {
         setStatus('Failed to send message. Please try again.');
       }
-    } catch (error:any) {
-      console.log("error from contact form" , error); 
+    } catch (error: unknown) {  
+      console.log("error from contact form", error); 
+
+      if (error instanceof Error) {
+        console.error("Error message: ", error.message);
+      }
 
       setStatus('An error occurred. Please try again.');
     }
