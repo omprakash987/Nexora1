@@ -25,7 +25,9 @@ export default function ContactForm() {
       } else {
         setStatus('Failed to send message. Please try again.');
       }
-    } catch (error) {
+    } catch (error:any) {
+      console.log("error from contact form" , error); 
+
       setStatus('An error occurred. Please try again.');
     }
   };

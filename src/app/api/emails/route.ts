@@ -27,10 +27,10 @@ export async function POST(req:NextRequest) {
           },{status:200})
 
         
-    } catch (error:any) {
+    } catch (error:unknown) {
         return NextResponse.json({
-            message:error.message,
-            status:500
+            message: "An unexpected error occurred",
+        status: 500
         })
     }
     
