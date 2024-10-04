@@ -9,6 +9,7 @@ const MainBody = () => {
   return (
     <div className='h-screen bg-background bg-custom-blue animate-slideDown'>
       <h1 className='text-white text-center text-6xl font-bold p-10 gradient-text'>
+        <span className='bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
       <Typewriter
           words={["Hi, I am  omprakash"]}
           loop={false}
@@ -19,6 +20,8 @@ const MainBody = () => {
           delaySpeed={1000}
           
         />
+
+</span>
       </h1>
       <p className='text-white text-center text-4xl p-10 '>
         I am a full stack developer and a freelancer

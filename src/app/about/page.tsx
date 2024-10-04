@@ -14,6 +14,7 @@ const page = () => {
 
       <div className='h-screen bg-background bg-custom-blue animate-slideDown'>
       <h1 className='text-white text-center text-6xl font-bold p-10 gradient-text'>
+      <span className='bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
       <Typewriter
           words={["Hi, I am  omprakash"]}
           loop={false}
@@ -24,6 +25,8 @@ const page = () => {
           delaySpeed={1000}
           
         />
+
+</span>
       </h1>
       <p className='text-white text-center text-2xl p-10'>
       Hi, I am Omprakash, a passionate Full Stack Developer and freelancer. <br />
@@ -35,7 +38,7 @@ const page = () => {
          <br /> and more, allowing me to tackle complex projects with confidence.
       </p>
       <div className='flex justify-center'>
-        <a href="/resume.pdf.pdf" download="Omprakash_Resume.pdf" className='bg-custom-purple text-white px-4 py-2 rounded-md'>
+        <a href="/resume.pdf.pdf" download="Omprakash_Resume.pdf" className=' bg-blue-500 bg-custom-purple  px-4 py-2 rounded-md border-2 border-white bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
           Resume
         </a>
       </div>
