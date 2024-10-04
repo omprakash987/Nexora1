@@ -1,5 +1,4 @@
 import { Resend } from 'resend';
-import Welcome from '@/emails/Welcome';
 import { NextRequest, NextResponse } from 'next/server';
 import ContactFormEmail from '@/emails/ContactFromEmail';
 
@@ -10,7 +9,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 
 
-export async function POST(req:NextRequest,res:NextResponse) {
+export async function POST(req:NextRequest) {
  
     try {
         const {name,email,message} = await req.json(); 
