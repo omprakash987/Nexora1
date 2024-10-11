@@ -22,21 +22,21 @@ const ProjectCard: React.FC<ProjectCardProps>  = ({imageUrl,message}) => {
 
 const ProjectCardContainer = ()=>{
     return(
-      <div className='bg-custom-blue animate-slideDown'>
+      <div className='bg-custom-blue overflow-hidden '>
       <div className="flex flex-col md:flex-row justify-between gap-4">
         <div className='flex flex-col gap-4 cursor-pointer hover:scale-105 transition-all duration-300 p-4 md:p-10 md:pl-40'>
-          <Link href="https://github.com/omprakash987">
+          <Link href="https://github.com/omprakash987/nextblog">
             <ProjectCard 
               imageUrl="/blog.png"
-              message="click here to see"
+              message="Click to veiw"
             />
           </Link>
         </div>
         <div className='flex flex-col gap-4 cursor-pointer hover:scale-105 transition-all duration-300 p-4 md:p-10 md:pr-40'>
-          <Link href="https://github.com/omprakash987">
+          <Link href="https://github.com/omprakash987/e-commerse-store">
             <ProjectCard 
-              imageUrl="/blog.png"
-              message="click here to see"
+              imageUrl="/e-commerse-store.png"
+              message="click to view"
             />
           </Link>
         </div>
