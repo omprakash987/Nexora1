@@ -28,7 +28,7 @@ const ProjectCardContainer = ()=>{
           <Link href="https://github.com/omprakash987/nextblog">
             <ProjectCard 
               imageUrl="/blog.png"
-              message="Click to veiw"
+              message=" Next Blog"
             />
           </Link>
         </div>
@@ -36,7 +36,7 @@ const ProjectCardContainer = ()=>{
           <Link href="https://github.com/omprakash987/e-commerse-store">
             <ProjectCard 
               imageUrl="/e-commerse-store.png"
-              message="click to view"
+              message="E-commerse Store"
             />
           </Link>
         </div>
@@ -46,8 +46,8 @@ const ProjectCardContainer = ()=>{
         <div className='flex flex-col gap-4 cursor-pointer hover:scale-105 transition-all duration-300 p-4 md:p-10 md:pl-40'>
           <Link href="https://github.com/omprakash987">
             <ProjectCard 
-              imageUrl="/blog.png"
-              message="click here to see"
+              imageUrl="/jobfound.png"
+              message="Job Found"
             />
           </Link>
         </div>
