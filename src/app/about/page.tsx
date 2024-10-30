@@ -38,7 +38,7 @@ const page = () => {
          <br /> and more, allowing me to tackle complex projects with confidence.
       </p>
       <div className='flex justify-center'>
-        <a href="/resume.pdf.pdf" download="Omprakash_Resume.pdf" className=' bg-blue-500 bg-custom-purple  px-4 py-2 rounded-md border-2 border-white bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
+        <a href="/resume.pdf" download="Omprakash_Resume.pdf" className=' bg-blue-500 bg-custom-purple  px-4 py-2 rounded-md border-2 border-white bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
           Resume
         </a>
       </div>
