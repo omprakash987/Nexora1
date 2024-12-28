@@ -29,19 +29,14 @@ const page = () => {
 </span>
       </h1>
       <p className='text-white text-center text-2xl p-10'>
-      Hi, I omprakash, a passionate Full Stack Developer and freelancer. <br />
+      Hi, We are a passionate Full Stack Developer and freelancer. <br />
        With a strong foundation in both front-end and back-end development,
        <br />
-        I love creating efficient, scalable web applications that provide seamless user experiences.
+        We love creating efficient, scalable web applications that provide seamless user experiences.
         <br />
          My expertise spans across modern technologies like React, Next.js, Node.js,
          <br /> and more, allowing me to tackle complex projects with confidence.
       </p>
-      <div className='flex justify-center'>
-        <a href="/resume.pdf" download="Omprakash_Resume.pdf" className=' bg-blue-500 bg-custom-purple  px-4 py-2 rounded-md border-2 border-white bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
-          Resume
-        </a>
-      </div>
       <div className=" flex justify-center gap-4 text-4xl text-white mt-10 ">
       <Link href="mailto:kanuparewa371@gmail.com">
       <SiGmail className=" cursor-pointer" />
