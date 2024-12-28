@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react';
-import ProjectCardContainer from './ProjectCard';
 import { Typewriter } from 'react-simple-typewriter';
 import Reviews from './Reviews';
 import { AppleCardsCarouselDemo } from './Services';
