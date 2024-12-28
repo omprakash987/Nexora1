@@ -2,12 +2,12 @@ import Link from 'next/link';
 import React, { useState, useEffect, useRef } from 'react';
 
 const NavBar: React.FC = () => {
-  const [activeItem, setActiveItem] = useState<number>(0); // Track which item is active
+  const [activeItem, setActiveItem] = useState<number>(0); 
   const [boxPosition, setBoxPosition] = useState<{ left: number; width: number }>({
     left: 0,
     width: 0,
-  }); // Track the position and width of the border box
-  const itemsRef = useRef<(HTMLLIElement | null)[]>([]); // Store references to each menu item
+  });  
+  const itemsRef = useRef<(HTMLLIElement | null)[]>([]);  
 
   const items = [
     { name: 'Home', href: '/' },
@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
   }, [activeItem]);
 
   return (
-    <div className="relative bg-custom-purple h-16 animate-slideDown">
+    <div className="relative bg-custom-purple h-16 animate-slideDown ">
       <ul className="flex justify-end items-center h-full relative">
         {/* Moving border box */}
         <div

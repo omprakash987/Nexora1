@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Omprakash Parewa | Full Stack Developer & Freelancer",
-  description: "Portfolio of Omprakash Parewa, a passionate full stack developer and freelancer specializing in building websites and web applications.",
-  keywords: ["Omprakash Parewa", "full stack developer", "freelancer", "web development", "portfolio"],
+  title: "Nexora",
+  description: "Nexora",
+  keywords: ['nexora'],
 };
 export default function RootLayout({
   children,

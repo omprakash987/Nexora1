@@ -39,37 +39,37 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className=" max-w-full mx-auto p-8 space-y-6 relative">
       <div className="absolute inset-0 rounded-lg moving-border"></div>
-      <div className="relative z-10 bg-white bg-opacity-80 p-6 rounded-lg backdrop-blur-sm">
+      <div className="relative z-10 bg-gradient-to-r from-blue-900 to-blue-300 p-6 rounded-lg backdrop-blur-sm w-96 h-1/6">
         <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name:</label>
+          <label htmlFor="name" className="block text-sm  text-black font-bold mb-1">Name:</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-3 text-black py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email:</label>
+          <label htmlFor="email" className="block text-sm  text-black font-bold  mb-1">Email:</label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full text-black px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div className="mb-4">
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message:</label>
+          <label htmlFor="message" className="block text-sm  text-black font-bold  mb-1">Message:</label>
           <textarea
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-none"
+            className="w-full px-3 py-2 text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 h-32 resize-none"
           ></textarea>
         </div>
         <button

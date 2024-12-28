@@ -16,7 +16,7 @@ const page = () => {
       <h1 className='text-white text-center text-6xl font-bold p-10 gradient-text'>
       <span className='bg-gradient-to-r from-blue-900 to-blue-300 text-transparent bg-clip-text'>
       <Typewriter
-          words={["Hi, I am  omprakash"]}
+          words={["NEXORA"]}
           loop={false}
           cursor
           cursorStyle='_'
@@ -29,7 +29,7 @@ const page = () => {
 </span>
       </h1>
       <p className='text-white text-center text-2xl p-10'>
-      Hi, I am Omprakash, a passionate Full Stack Developer and freelancer. <br />
+      Hi, I omprakash, a passionate Full Stack Developer and freelancer. <br />
        With a strong foundation in both front-end and back-end development,
        <br />
         I love creating efficient, scalable web applications that provide seamless user experiences.

@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+const {
+	default: flattenColorPalette,
+  } = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config: Config = {
     darkMode: ["class"],
     content: [
@@ -19,10 +23,19 @@ const config: Config = {
   					transform: 'translateY(0)',
   					opacity: '1'
   				}
-  			}
+  			},
+			  scroll: {
+				to: {
+				  transform: "translate(calc(-50% - 0.5rem))",
+				},
+			  },
   		},
+
   		animation: {
-  			slideDown: 'slideDown 1s ease-out'
+  			slideDown: 'slideDown 1s ease-out',
+			  scroll:
+			  "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+		  
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -73,6 +86,17 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),addVariablesForColors  ],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+	let allColors = flattenColorPalette(theme("colors"));
+	let newVars = Object.fromEntries(
+	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+	);
+   
+	addBase({
+	  ":root": newVars,
+	});
+  }
 export default config;
